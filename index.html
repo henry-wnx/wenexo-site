@@ -1,165 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wenexo | Business Development & Market Expansion</title>
-  <meta name="description" content="Wenexo is the professional platform of Henry Trejgier — driving business development, partnerships, and market expansion for technology-driven companies across LATAM, the U.S., and Israel." />
-
-  <!-- Open Graph (for LinkedIn/Facebook preview) -->
-  <meta property="og:title" content="Wenexo | Business Development & Market Expansion" />
-  <meta property="og:description" content="The professional platform of Henry Trejgier — strategy, partnerships, and growth for technology-driven companies." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.wenexo.com/" />
-  <meta property="og:image" content="/og-image.png" />
-
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="I build US market operations for Israeli & LatAm tech companies. Not just strategy - I join your team and build alongside you.">
+  <title>Wenexo | Israeli & LatAm Tech → US Market Entry</title>
+  
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Logo/Social%20Media%20Logo%20Files/Favicon/Favicon%20Logo.png">
 </head>
-
 <body>
-  <!-- HERO -->
-  <header class="hero">
-    <div class="container">
-      <div class="nav">
-        <a class="logo" href="#" aria-label="Wenexo">
-          <img src="./White on Transparent.png" alt="Wenexo logo" />
-          <strong style="display:none">Wenexo</strong>
-        </a>
-        <nav>
-          <a href="#services">Expertise</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
+  
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="Logo/Standard%20Logo%20Files/Black%20on%20Transparent.png" alt="Wenexo">
+      </a>
+      
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#who-i-help">Who I Help</a></li>
+        <li><a href="#augmented-execution">Augmented Execution</a></li>
+        <li><a href="#what-you-get">What You Get</a></li>
+        <li><a href="#track-record">Track Record</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Schedule Call</a></li>
+      </ul>
+    </div>
+  </nav>
 
-      <div class="hero-inner">
-        <span class="badge">Strategy • Partnerships • Growth</span>
-        <h1>Business Development & Market Expansion</h1>
-        <p class="lead">
-          Wenexo is the professional platform of Henry Trejgier — helping technology-driven companies turn strategy into execution
-          <br class="desktop-break">
-          across Latin America, the U.S., and Israel.
-        </p>
-        <div class="hero-cta">
-          <a class="btn" href="#contact">Work with Wenexo</a>
-          <a class="btn" href="https://www.linkedin.com/in/htrejgier/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>I Build US Market Operations for Israeli & LatAm Tech Companies</h1>
+      
+      <p class="hero-subtitle">
+        Not just strategy. Not just consulting. I join your team and build your US business alongside you. From first customer to repeatable revenue engine.
+      </p>
+      
+      <div class="hero-cta-group">
+        <a href="contact.html" class="btn btn-primary">Schedule Discovery Call</a>
+        <span class="hero-availability">
+          <span class="dot"></span>
+          One Client Slot Available Q1 2026
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar Section -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">$20M</div>
+          <div class="stat-label">ARR Built at Gemalto</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">6 Years</div>
+          <div class="stat-label">Living in Israel</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Languages Fluent</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4 Months</div>
+          <div class="stat-label">Zero to US Operations</div>
         </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <!-- ABOUT (stacked rows) -->
-  <section class="stripe" id="about">
+  <!-- Who I Help Section -->
+  <section id="who-i-help">
     <div class="container">
-      <div class="about-copy">
-        <h2>Your Partner for Growth</h2>
+      <div class="section-header">
+        <h2>Who This Is For</h2>
+      </div>
+      
+      <div class="who-help-grid">
+        <div class="who-card">
+          <h3>Israeli Tech Companies</h3>
+          <p>
+            You've built strong technology in Israel. Your product works. Your investors want you in the US market. But you're not sure how to translate what works in Israel to American enterprise buyers.
+          </p>
+          <p>
+            You need someone who understands both markets, not an expensive US executive who doesn't get your product and doesn't get your dynamic, without stretching your local team in Israel.
+          </p>
+        </div>
+        
+        <div class="who-card">
+          <h3>LatAm Tech Companies</h3>
+          <p>
+            Your product is proven in Latin America, and you feel it's the moment to start exploring the US market. You know the opportunity is huge, but how to build a cost-effective way to enter a different market, with different buyer behavior, different sales cycles, and different operational requirements.
+          </p>
+          <p>
+            You need someone who speaks your language (literally and culturally) while understanding how to win in US enterprise and doesn't cost you a fortune.
+          </p>
+        </div>
+        
+        <div class="who-card">
+          <h3>Post-Seed to Series B Tech Companies</h3>
+          <p>
+            You're past the friends-and-family stage. Your product works in your home market. You've raised capital or you're generating revenue. Your investors or your board want you in the US.
+          </p>
+          <p>
+            But you're not ready for a $200K US VP yet. You need someone who can BUILD US operations - marketing infrastructure, first customers, product-market fit - at VP-level quality without the VP-level cost.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Augmented Execution Section -->
+  <section id="augmented-execution" class="ae-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>How I Deliver VP-Level Work Without VP-Level Cost</h2>
+      </div>
+      
+      <div class="ae-content">
         <p>
-          Wenexo is the professional platform of Henry Trejgier — built to connect international experience in business development, partnerships, and market expansion.
-          I work with technology-driven companies (SaaS, IoT, data/AI and more) to open markets, build pipelines, and translate plans into measurable growth.
-          Engagements take different forms — including consulting, strategic advisory, entrepreneurial initiatives, and full-time executive roles.
+          Over 20+ years, I've built expertise across multiple domains: business development, marketing, product management, partnerships, customer success, enterprise sales. I not only played these roles, but managed teams responsible for execution in these areas. At traditional consulting firms, you'd need to hire 3-4 different people to cover all of this.
         </p>
+        
+        <p>
+          Using AI strategically, I can deploy all of this experience simultaneously. When you work with me, you're actually getting a COO plus a team: Marketing expert, Web developer, Product Manager, Customer Success, and Sales Operations. AI is the tool I use to deliver what I call <strong>AE: Augmented Execution</strong>.
+        </p>
+        
+        <p>
+          The result: I can act as your fractional COO in the US - handling business development, product-market coordination, marketing infrastructure, and operational setup - for a fraction of what a full-time US executive would cost.
+        </p>
+        
+        <div class="ae-tagline">
+          This isn't about AI replacing experience. It's about AI amplifying decades of cross-functional expertise.
+        </div>
       </div>
-
-      <aside class="card accent about-focus">
-        <h3>Focus Areas</h3>
-        <ul class="taglist">
-          <li>Business Development</li>
-          <li>Enterprise Sales</li>
-          <li>Market Entry (LATAM • U.S. • Israel)</li>
-          <li>Go-to-Market (SaaS & Platforms)</li>
-          <li>Strategic Partnerships & Alliances</li>
-          <li>Pilot → Scale Playbooks</li>
-          <li>Pricing & Packaging</li>
-          <li>International Account Management</li>
-          <li>Multilingual & Cross-Cultural Ops</li>
-        </ul>
-      </aside>
     </div>
   </section>
 
-  <!-- EXPERTISE -->
-  <section class="stripe blue" id="services">
+  <!-- What You Get Section -->
+  <section id="what-you-get">
     <div class="container">
-      <h2>Expertise</h2>
-      <div class="grid cols-2" style="margin-top:18px">
-        <div class="card">
-          <h3>Business Development & Sales Strategy</h3>
-          <p>Designing repeatable motions, messaging, and outreach to drive qualified pipeline and revenue.</p>
+      <div class="section-header">
+        <h2>What You Get: Not Advice - Execution</h2>
+      </div>
+      
+      <div class="build-grid">
+        <div class="build-card">
+          <h3>Business Development Infrastructure</h3>
+          <ul>
+            <li>First client wins (not just pipeline)</li>
+            <li>Sales process that repeats</li>
+            <li>Pricing and positioning for US market</li>
+            <li>Strategic partnerships: Identify, initiate, and coordinate integrations</li>
+          </ul>
         </div>
-        <div class="card">
-          <h3>Market Entry & Expansion (LATAM • U.S. • Israel)</h3>
-          <p>Playbooks for new geographies: ICP, value prop localization, partner maps, and first wins.</p>
+        
+        <div class="build-card">
+          <h3>Product-Market Fit for US</h3>
+          <ul>
+            <li>Coordinate between your product team and US customers</li>
+            <li>Go-to-market messaging that resonates</li>
+            <li>Launch and manage first US pilots with enterprise customers</li>
+            <li>Build a feedback loop that improves product</li>
+          </ul>
         </div>
-        <div class="card">
-          <h3>Go-to-Market for SaaS & Platforms</h3>
-          <p>From pilots to scale — packaging, pricing, and land-and-expand frameworks across industries.</p>
-        </div>
-        <div class="card">
-          <h3>Strategic Partnerships & Enterprise Engagement</h3>
-          <p>Identifying and structuring alliances with operators, OEMs, channel partners, and key accounts.</p>
+        
+        <div class="build-card">
+          <h3>Operational Foundation</h3>
+          <ul>
+            <li>Marketing infrastructure: Complete website (built in days, not months), lead generation system, campaign strategy</li>
+            <li>Customer success process</li>
+            <li>Strategic partnership development</li>
+            <li>Systems that scale beyond my engagement</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- HENRY -->
-  <section class="stripe alt">
-    <div class="container grid cols-2">
-      <div>
-        <h2>Experience that Builds Growth</h2>
-        <p>20+ years building and scaling businesses across enterprise and startup environments: leadership at Gemalto (launched $20M ARR mobile solutions), deep immersion in Israel’s startup ecosystem (Engie App, Revuze), and current U.S. engagements. Work across Latin America, the U.S., Israel, and Europe provides a global network and perspective for every project.</p>
-      </div>
-      <div class="card">
-        <h3>Highlights</h3>
-        <ul>
-          <li>Enterprise & startup GTM leadership</li>
-          <li>Multi-regional execution (LATAM, U.S., Europe, Israel)</li>
-          <li>Technology domains: SaaS, IoT, Mobility, Fintech, EdTech</li>
-          <li>Multilingual: Portuguese, English, Spanish, French, Hebrew</li>
-        </ul>
-
-        <h3 class="subhead">Learning & Exploration</h3>
-        <ul>
-          <li>Blockchain & Financial Markets</li>
-          <li>Programming & Data</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT / CTA -->
-  <section class="stripe cta" id="contact">
+  <!-- Track Record Section -->
+  <section id="track-record">
     <div class="container">
-      <h2>Let’s Connect</h2>
-      <p class="muted">Briefly share your goals — I’ll reply with next steps.</p>
-      <div class="hero-cta">
-        <a class="btn" href="mailto:henry@wenexo.com">Email</a>
-        <a class="btn" href="https://www.linkedin.com/in/htrejgier/" target="_blank" rel="noopener">LinkedIn</a>
+      <div class="section-header">
+        <h2>Track Record</h2>
+      </div>
+      
+      <div class="track-timeline">
+        <div class="track-card">
+          <h3>Corporate Foundation (2001-2017)</h3>
+          <p>
+            <strong>16 years at Gemalto (now Thales Group)</strong><br>
+            VP Business Development, Americas
+          </p>
+          <p>
+            Conceived, built, and scaled mobile solutions business from zero to $20M ARR. Managed operations across Brazil, Mexico, US. Lived in Mexico (2006-2007) and France (2009-2010).
+          </p>
+          <p>
+            This is where I learned to build businesses across cultures and scale internationally.
+          </p>
+        </div>
+        
+        <div class="track-card">
+          <h3>Startup Nation Immersion (2018-2024)</h3>
+          <p>
+            Made aliyah to Israel in 2018. Joined Israeli startup ecosystem, including work with automotive venture backed by Uri Levine (Waze co-founder).
+          </p>
+          <p>
+            Lived in Israel for 6 years, worked with Israeli founders, absorbed the startup mindset. Learned how Israeli companies think, build, and operate - very different from Brazil or US. More aggressive, more technical, incredibly innovative.
+          </p>
+          <p>
+            This is where I learned what Israeli companies need when entering the US market.
+          </p>
+        </div>
+        
+        <div class="track-card">
+          <h3>Current Execution (2024-Present)</h3>
+          <p>
+            Now based in Florida, leading US market entry for Israel-Brazil telematics joint venture.
+          </p>
+          <p><strong>What I've built in 4 months:</strong></p>
+          <ul>
+            <li>Complete marketing infrastructure (website, lead gen, campaigns)</li>
+            <li>Product roadmap coordination between Israeli dev team and US customers</li>
+            <li>Strategic partnerships with technology and distribution platforms</li>
+            <li>Enterprise deal in progress (500+ vehicle fleet operator)</li>
+            <li>Customer success systems</li>
+          </ul>
+          <p style="margin-top: 1rem;">
+            <strong>Result:</strong> From zero to operational US presence in 4 months.
+          </p>
+        </div>
+      </div>
+      
+      <p class="languages-note">
+        <strong>Languages:</strong> Fluent in English, Portuguese, Spanish | Professional proficiency in Hebrew, French
+      </p>
+    </div>
+  </section>
+
+  <!-- Availability / CTA Section -->
+  <section class="availability-section" id="availability">
+    <div class="container">
+      <div class="availability-content">
+        <h2>Current Availability</h2>
+        <p>
+          <strong>Available:</strong> One additional client slot starting Q1 2026.
+        </p>
+        <p>
+          <strong>Looking for:</strong> Israeli or LatAm tech company (post-seed to Series B) ready to BUILD - not just explore - US market operations.
+        </p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 1.5rem;">Schedule Discovery Call</a>
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
-      <div>© <span id="year"></span> Wenexo. All rights reserved.</div>
-      <div class="muted">Strategy • Partnerships • Growth • International Presence</div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">
+        <img src="Logo/Standard%20Logo%20Files/White%20on%20Transparent.png" alt="Wenexo">
+      </span>
+      
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://linkedin.com/in/htrejgier" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+      
+      <p class="footer-copy">
+        © 2026 Wenexo. All rights reserved.
+      </p>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <!-- Sticky Schedule Call Button -->
+  <a href="contact.html" class="sticky-cta" id="stickyCta" aria-label="Schedule Call">
+    Schedule Call
+  </a>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
