@@ -254,7 +254,7 @@ a:hover {
 
 .hero {
   padding: 8rem 1.5rem 5rem;
-  background: linear-gradient(180deg, var(--gray-50) 0%, var(--white) 100%);
+  background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
   min-height: 85vh;
   display: flex;
   align-items: center;
@@ -263,6 +263,34 @@ a:hover {
 .hero-content {
   max-width: var(--max-width);
   margin: 0 auto;
+  width: 100%;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
 }
 
 .hero h1 {
@@ -278,6 +306,25 @@ a:hover {
   max-width: 650px;
   margin-bottom: 2rem;
   line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .hero-image {
+    order: 2;
+  }
+  
+  .hero-text {
+    order: 1;
+  }
+  
+  .hero-image img {
+    max-width: 280px;
+  }
 }
 
 .hero-cta-group {
