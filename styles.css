@@ -26,6 +26,7 @@
   /* Typography */
   --font-heading: 'Source Serif 4', Georgia, serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-logo: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   
   /* Spacing */
   --section-padding: 5rem 1.5rem;
@@ -138,19 +139,12 @@ a:hover {
 }
 
 .nav-logo {
-  font-family: var(--font-heading);
+  font-family: var(--font-logo);
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--navy);
-  letter-spacing: -0.02em;
-  display: flex;
-  align-items: center;
-}
-
-.nav-logo img {
-  display: block;
-  height: 32px;
-  width: auto;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .nav-logo:hover {
@@ -525,6 +519,19 @@ section:nth-of-type(even) {
   color: var(--gray-600);
   font-size: 0.95rem;
   line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.who-card p:last-child {
+  margin-bottom: 0;
+}
+
+.who-hook {
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  color: var(--navy) !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.5 !important;
 }
 
 /* ========================================
@@ -912,8 +919,9 @@ section:nth-of-type(even) {
    CONTACT PAGE
    ======================================== */
 
+/* Contact Hero - single column centered */
 .contact-hero {
-  padding: 8rem 1.5rem 3rem;
+  padding: 8rem 1.5rem 4rem;
   background: var(--gray-50);
   text-align: center;
 }
@@ -930,33 +938,51 @@ section:nth-of-type(even) {
   margin: 0 auto;
 }
 
-.contact-content {
-  max-width: 900px;
-  margin: 0 auto;
+.contact-cta {
+  margin-top: 2.5rem;
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 3rem;
-  align-items: start;
+.btn-large {
+  font-size: 1.15rem;
+  padding: 1.1rem 2.5rem;
 }
 
-@media (max-width: 768px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
+.contact-cta-alt {
+  margin-top: 1rem;
+  color: var(--gray-500);
+  font-size: 0.9rem;
 }
 
-.contact-info h2 {
+.contact-cta-alt a {
+  color: var(--gray-600);
+  text-decoration: underline;
+}
+
+.contact-cta-alt a:hover {
   color: var(--navy);
-  font-size: 1.35rem;
-  margin-bottom: 1.25rem;
+}
+
+/* Good Fit Section */
+.good-fit-section {
+  padding: 4rem 1.5rem;
+}
+
+.good-fit-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.good-fit-content h2 {
+  color: var(--navy);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .fit-checklist {
   list-style: none;
   margin-bottom: 2rem;
+  text-align: left;
 }
 
 .fit-checklist li {
@@ -975,65 +1001,36 @@ section:nth-of-type(even) {
   font-size: 1.1rem;
 }
 
-.contact-alternative {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--gray-200);
+.good-fit-note {
+  color: var(--gray-600);
+  font-size: 0.95rem;
+  margin-top: 1.5rem;
 }
 
-.contact-alternative h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.75rem;
+/* What Happens Section */
+.what-happens-section {
+  padding: 0 1.5rem 4rem;
 }
 
-.contact-alternative a {
-  display: block;
-  color: var(--navy);
-  margin: 0.5rem 0;
-  font-size: 1rem;
-}
-
-.contact-alternative a:hover {
-  color: var(--accent);
-}
-
-.calendar-embed {
-  background: var(--white);
-  border: 1px solid var(--gray-200);
-  border-radius: 12px;
-  padding: 2rem;
-  min-height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.calendar-placeholder {
-  text-align: center;
-  color: var(--gray-500);
-}
-
-.calendar-placeholder p {
-  margin-bottom: 1rem;
-}
-
-/* What happens next section */
 .next-steps {
   background: var(--gray-50);
   border-radius: 12px;
-  padding: 2rem;
-  margin-top: 3rem;
+  padding: 2.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .next-steps h2 {
   color: var(--navy);
   font-size: 1.35rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .next-steps ol {
   list-style: none;
   counter-reset: steps;
+  text-align: left;
 }
 
 .next-steps li {
@@ -1082,18 +1079,17 @@ section:nth-of-type(even) {
 }
 
 .footer-logo {
-  font-family: var(--font-heading);
+  font-family: var(--font-logo);
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--white);
-  display: flex;
-  align-items: center;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
-.footer-logo img {
-  display: block;
-  height: 28px;
-  width: auto;
+.footer-logo:hover {
+  color: var(--white);
+  opacity: 0.9;
 }
 
 .footer-links {

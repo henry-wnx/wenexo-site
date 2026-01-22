@@ -9,22 +9,23 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
   
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon-logo.png">
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+  <link rel="apple-touch-icon" href="images/favicon-180.png">
 </head>
 <body>
   
   <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="black-logo.png" alt="Wenexo">
-      </a>
+      <a href="index.html" class="nav-logo">WENEXO</a>
       
       <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
         <span></span>
@@ -48,64 +49,39 @@
     <div class="container">
       <h1>Let's Talk</h1>
       <p>Schedule a 30-minute discovery call. No pitch - just an honest conversation about whether working together makes sense.</p>
+
+      <div class="contact-cta">
+        <a href="https://calendar.app.google/McBscJcgZrtwofDp6" target="_blank" rel="noopener" class="btn btn-primary btn-large">Schedule 30-Min Discovery Call</a>
+        <p class="contact-cta-alt">Don't see a time that works? Email <a href="mailto:henry@wenexo.com">henry@wenexo.com</a></p>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Content -->
-  <section>
-    <div class="contact-content">
-      <div class="contact-grid">
-        
-        <!-- Left Column: Qualification -->
-        <div class="contact-info">
-          <h2>You're Probably a Good Fit If:</h2>
-          
-          <ul class="fit-checklist">
-            <li>You're an Israeli or LatAm tech company</li>
-            <li>Your product works in your home market</li>
-            <li>You're ready to BUILD in the US (not just explore)</li>
-            <li>You're in mobility, telematics, IoT, or B2B SaaS</li>
-            <li>You're post-seed to Series B stage</li>
-            <li>You're looking for execution, not just advice</li>
-          </ul>
-          
-          <p style="color: var(--gray-600); font-size: 0.95rem;">
-            If 4-5 of these are true, let's talk. If not, I'm probably not the right fit.
-          </p>
-          
-          <!-- Alternative Contact -->
-          <div class="contact-alternative">
-            <h3>Prefer Email?</h3>
-            <a href="mailto:henry@wenexo.com">henry@wenexo.com</a>
-            <a href="https://linkedin.com/in/htrejgier" target="_blank" rel="noopener">Connect on LinkedIn</a>
-          </div>
-        </div>
-        
-        <!-- Right Column: Calendar -->
-        <div class="calendar-embed">
-          <!-- 
-            INSTRUCTIONS FOR HENRY:
-            Replace this placeholder with your Calendly embed code.
-            
-            1. Go to Calendly.com and create a free account
-            2. Set up a 30-minute "Discovery Call" event type
-            3. Click "Share" > "Add to Website" > "Inline Embed"
-            4. Copy the embed code and replace this entire div's contents
-            
-            Example Calendly embed code:
-            <div class="calendly-inline-widget" data-url="https://calendly.com/henry-wenexo/discovery-call" style="min-width:320px;height:630px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-          -->
-          <div class="calendar-placeholder">
-            <p><strong>Calendar Coming Soon</strong></p>
-            <p>In the meantime, email me at:<br>
-            <a href="mailto:henry@wenexo.com" style="font-size: 1.1rem;">henry@wenexo.com</a></p>
-          </div>
-        </div>
-        
+  <!-- Good Fit Section -->
+  <section class="good-fit-section">
+    <div class="container">
+      <div class="good-fit-content">
+        <h2>We're probably a good fit if:</h2>
+
+        <ul class="fit-checklist">
+          <li>You're an Israeli or LatAm tech company</li>
+          <li>Your product works in your home market</li>
+          <li>You're ready to BUILD in the US (not just explore)</li>
+          <li>You're in mobility, telematics, IoT, or B2B SaaS</li>
+          <li>You're post-seed to Series B stage</li>
+          <li>You're looking for execution, not just advice</li>
+        </ul>
+
+        <p class="good-fit-note">
+          If your situation is different but you believe there's a fit, email me directly - I'm always open to a conversation.
+        </p>
       </div>
-      
-      <!-- What Happens Next -->
+    </div>
+  </section>
+
+  <!-- What Happens Section -->
+  <section class="what-happens-section">
+    <div class="container">
       <div class="next-steps">
         <h2>What Happens on the Call</h2>
         <ol>
@@ -113,20 +89,14 @@
           <li><strong>I ask questions</strong> - to understand if this is genuinely a fit for both of us (10 min)</li>
           <li><strong>We discuss next steps</strong> - whether working together makes sense, and what that would look like (10 min)</li>
         </ol>
-        <p style="margin-top: 1rem; color: var(--gray-600);">
-          No pressure, no pitch. Just an honest conversation about whether this could work.
-        </p>
       </div>
-      
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-inner">
-      <span class="footer-logo">
-        <img src="white-logo.png" alt="Wenexo">
-      </span>
+      <a href="index.html" class="footer-logo">WENEXO</a>
       
       <ul class="footer-links">
         <li><a href="about.html">About</a></li>
